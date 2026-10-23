@@ -1,0 +1,28 @@
+{
+  "name": "delegate-dao",
+  "version": "1.0.0",
+  "description": "DelegateDAO — Smart contracts for a DAO with vote delegation and on-chain delegation history (Solidity + OpenZeppelin + Truffle)",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "compile": "truffle compile",
+    "test": "truffle test --config truffle-config.test.js",
+    "migrate": "truffle migrate --reset",
+    "migrate:dev": "truffle migrate --reset --network development",
+    "ganache": "ganache --deterministic --chain.chainId 1337 --server.port 8545 --wallet.totalAccounts 10",
+    "demo": "truffle exec scripts/demo.js --network development",
+    "console": "truffle console --network development"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.1.0"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "2.1.15",
+    "dotenv": "18.0.9",
+    "ganache": "7.9.2",
+    "truffle": "5.11.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
